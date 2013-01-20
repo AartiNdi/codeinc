@@ -1,13 +1,26 @@
-<!-- DOctype= html -->
-<html>
+<! DOctype= html>
+<html lang="en">
 	<head>
 		<title>Paste</title>
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 	</head>
 	<body>
-		<form action="include.php">
-			<input type="text" name="repo_url">
-			<input type="text" name="repo_file">
-			<input type="submit" value="Target">
-		</form>
+		<div class="container-fluid">
+			<div class="span 1">				
+				<form action="include.php" method="get">
+					<div class="clearfix">
+						<div class="input">							
+							Repo url: <input type="text" name="repo_url">
+							File url: <input type="text" name="repo_file">
+							Begin from: <input type="number" name="beg">
+							End at: <input type="number" name="end">
+							<input type="submit" value="Target">
+						</div><!--input-->
+					</div><!--clearfix-->
+				</form>
+			</div>
+		</div>
 	</body>
 </html>
